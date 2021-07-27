@@ -52,19 +52,19 @@
                                         //loop is limited by number put in for i<x in for loop
                                             //will iterate through until reaches length(number of indeces) of input number
 
-// const fibNo = (number) => {
-// let fib = []
+const fibNo = (number) => {
+let fib = []
 
-// fib[0] = 1;
-// fib[1] = 1;
-//  for (var i = 2; i<(number); i++){ 
-//      fib[i] = fib[i - 2] + fib[i - 1];
-//     //  console.log(fib)
-//     }
-//     return fib
-// }
-// console.log(fibNo(10))
-// console.log(fibNo(6))
+fib[0] = 1;
+fib[1] = 1;
+ for (var i = 2; i<(number); i++){ 
+     fib[i] = fib[i - 2] + fib[i - 1];
+    //  console.log(fib)
+    }
+    return fib
+}
+console.log(fibNo(10))
+console.log(fibNo(6))
 //----->[
 //     1,  1,  2,  3,  5,
 //     8, 13, 21, 34, 55
@@ -144,17 +144,17 @@ var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
 // console.log(filterArray(fullArr2))
 //---> [ 7, 23, -823 ] now sort by least - greatest
 
-// const filterArray = (array) => {
-//     let filteredArray = []
-//     for(let i=0; i<array.length; i++){
-//         if(typeof array[i] === 'number' && array[i] %2 != 0){
-//             filteredArray.push(array[i])
-//         }
-//     }
-//     return filteredArray.sort((a, b) => a-b)
-// }
-// console.log(filterArray(fullArr1))
-// console.log(filterArray(fullArr2))
+const filterArray = (array) => {
+    let filteredArray = []
+    for(let i=0; i<array.length; i++){
+        if(typeof array[i] === 'number' && array[i] %2 != 0){
+            filteredArray.push(array[i])
+        }
+    }
+    return filteredArray.sort((a, b) => a-b)
+}
+console.log(filterArray(fullArr1))
+console.log(filterArray(fullArr2))
 //[ -9, 199, 7, 9 ] ----> add params to sort to fix 
 // [ -9, 7, 9, 199 ] IT WORKED!
 
@@ -318,43 +318,45 @@ var numbersToAdd3 = []
 //     console.log(sumsArray(numbersToAdd1))
 
 
-// const sumsArray = (array) => {
-//   let num = 0
-//   return array.map(sum => num += sum);
-// }
-// console.log(sumsArray(numbersToAdd1))
-// console.log(sumsArray(numbersToAdd2))
-// console.log(sumsArray(numbersToAdd3))
+const sumsArray = (array) => {
+  let num = 0
+  return array.map(sum => num += sum);
+}
+console.log(sumsArray(numbersToAdd1))
+console.log(sumsArray(numbersToAdd2))
+console.log(sumsArray(numbersToAdd3))
 
 //---->[ 2, 6, 51, 60 ]
 // [ 0, 7, -1, 11 ]
 // []
 //----> halle-frickin-lujah
 
-var numbersToAdd1 = [2,  4,  45, 9]   
-// Excpected output: [2, 6, 51, 60]
 
-var numbersToAdd2 = [0, 7, -8, 12]
-// Expected output: [0, 7, -1, 11]
+// // ---> alternate solution:
+// var numbersToAdd1 = [2,  4,  45, 9]   
+// // Excpected output: [2, 6, 51, 60]
 
-var numbersToAdd3 = []
-// Expected output: []
+// var numbersToAdd2 = [0, 7, -8, 12]
+// // Expected output: [0, 7, -1, 11]
 
-let accumulatedSum = (array) => {
-    let output = [];
-    for(i=0; i<array.length;i++){
-        if (output.length > 0) {
-            output.push(array[i] + output[i-1])
-        }
-        else {
-            output.push(array[i])
-        }
-    }
-    return output;
-}
-let output = accumulatedSum(numbersToAdd1);
-console.log(output);
-let output2 = accumulatedSum(numbersToAdd2);
-console.log(output2);
-let output3 = accumulatedSum(numbersToAdd3);
-console.log(output3);
+// var numbersToAdd3 = []
+// // Expected output: []
+
+// let accumulatedSum = (array) => {
+//     let output = [];
+//     for(i=0; i<array.length;i++){
+//         if (output.length > 0) {
+//             output.push(array[i] + output[i-1])
+//         }
+//         else {
+//             output.push(array[i])
+//         }
+//     }
+//     return output;
+// }
+// let output = accumulatedSum(numbersToAdd1);
+// console.log(output);
+// let output2 = accumulatedSum(numbersToAdd2);
+// console.log(output2);
+// let output3 = accumulatedSum(numbersToAdd3);
+// console.log(output3);
