@@ -9,41 +9,41 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. What is `this` in JavaScript?
 
-  Your answer:
+  Your answer: in JavaScript, 'this' refers to the object it is contained within/being called from. 
 
-  Researched answer:
+  Researched answer: 
 
 
 
 2. What is yarn? What file(s) are modified in a React application when you run yarn?
 
-  Your answer:
+  Your answer: Yarn is an application that takes your React application and components and balls them all up together like a ball of yarn.
 
-  Researched answer:
+  Researched answer: Yarn is a package manager which allows you to use and share code with other developers, yarn adds a package file and a yarn.lock file to your react app.
 
 
 
 3. What are props in React?
 
-  Your answer:
+  Your answer: Props are extensions of components which allow your app to function. 
 
-  Researched answer:
+  Researched answer: Props are objects which store attribute values and allows data to be passed through one component to other components. Props are passed to components in the same way that arguments are passed in a function.
 
 
 
 4. What is JSX?
 
-  Your answer:
+  Your answer: JSX is JavaScript XML, a syntactical extention of JavaScript. Functionally it is essentially mashup of JavaScript and Html.
 
-  Researched answer:
+  Researched answer: JSX is JavaScript XML, a syntactical extention of JavaScript which allows you to write HTML in react inside of JavaScript code.
 
 
 
 5. What is a DOM event?
 
-  Your answer:
+  Your answer: A DOM event is a change to what the user sees in the window.
 
-  Researched answer:
+  Researched answer:DOM stands for Document Object Model, DOM Events signal that something has changed and can be triggered by the user or browser. Some examples of DOM events are a user clicking the mouse, a page loading, a form being submitted, etc.
 
 
 

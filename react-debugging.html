@@ -1,4 +1,4 @@
-<!-- ASSESSMENT 3: React Debugging Challenge -->
+  <!-- ASSESSMENT 3: React Debugging Challenge -->
 
 <!-- This file contains two React components in an HTML file. This React code is broken. Fix the THREE bugs in the code so the user can draw cards and reset the deck. Note: The components are correctly described in this file structure. There is no need to change the architecture of any code. -->
 
@@ -55,6 +55,7 @@
               <Card
                 drawCard={this.drawCard}
                 shuffle={this.shuffle}
+                hand={this.state.hand}
               />
             </>
           )
@@ -79,13 +80,13 @@
           }
           return(
             <>
-              <button onClick={}>
+              <button onClick={this.props.drawCard}>
                 Click to Draw a Card
               </button>
-              <button onClick={shuffle}>
+              <button onClick={this.props.shuffle}>
                 Return Cards and Shuffle Deck
               </button>
-              <div style={handStyles}>
+              <div style={this.props.handStyles}>
                 {this.props.hand.map((card, index) => {
                   return (
                     <div style={cardStyles} key={index}>
